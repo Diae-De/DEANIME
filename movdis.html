@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie servers</title>
+    <link rel="stylesheet" href="movstyle.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div><img src="/images/deanime (1).png" class="logo"></div>
+
+    <div class="sidebar">
+        <div><i class='bx bx-menu' id="btn"></i></div>
+        <ul>
+            <li>
+                    <i class='bx bx-search-alt' ></i>
+                    <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-alt'></i>
+                    <span class="links-name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-film' ></i>
+                    <span class="links-name">Films</span>
+                </a>
+                <span class="tooltip">Films</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-sketch'></i>
+                    <span class="links-name">Series</span>
+                </a>
+                <span class="tooltip">Series</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links-name">Others</span>
+                </a>
+                <span class="tooltip">Others</span>
+            </li>
+            
+        </ul>
+    </div>
+
+    <section id="main">
+        <h1>Kurulus Osman</h1>
+        <div class="movie-img"><img src="/images/osman.jpeg"></div>
+        <h2>The Story</h2>
+        <p>Osman Bey, the son of Ertugrul Ghazi and Halime Sultan, <br>
+            struggles against the Byzantium and the Mongols while trying <br>
+            to establish control over the Ottoman dynasty.</p>
+    </section>
+    <ul class="info-mov">
+        <li>
+            <span>Quality:</span>
+            <a href="#">HD</a>
+        </li>
+    </ul>
+
+    <ul class="info-mov2">
+        <li>
+            <span>Section:</span>
+            <a href="#">Turkish</a>
+        </li>
+    </ul>
+
+    <ul class="info-mov3">
+        <li>
+            <span>Year:</span>
+            <a href="#">2021</a>
+        </li>
+    </ul>
+
+    <div class="vid-back">
+        <video width="600" controls>
+            <source src="https://s6.cloudcdn.live/to3qvwz5invsy46b3w4gx65zczxspyheuzv3hk64muf65ddlk7ombmqmdfaq/v.mp4">
+        </video>
+    </div>
+
+
+    <script>
+        let btn = document.querySelector("#btn")
+        let sidebar = document.querySelector(".sidebar")
+        let searchbtn = document.querySelector(".bx-search-alt")
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active")
+        }
+        searchbtn.onclick = function(){
+            sidebar.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
