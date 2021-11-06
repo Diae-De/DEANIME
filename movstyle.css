@@ -224,11 +224,6 @@ p{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-video{
-    margin-left: 8%;
-    margin-top: 50px;
-    float: none;
-}
 
 .info-mov{
     color: white;
@@ -324,7 +319,6 @@ iframe{
 }
 
 .num-ep{
-    background: #061e2e;
     float: left;
     word-spacing: 3em;
     margin-left: 40px;
@@ -353,6 +347,111 @@ iframe{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width:360px){
+    .logo {
+        position: absolute;
+        left: 33%;
+        width: calc(90% - 100px);
+        top: -70px;
+    }
 
+    h1{
+        margin-left: 25%;
+        margin-top: -50px;
+        font-size: 20px;
+    }
+
+    .movie-img{
+        width: 120px;
+        height: 180px;
+        margin: 0px 30px 20px 80px ;
+    }
+
+    h2{
+        margin-top: 1em;
+        margin-left: 3em;
+        float: left;
+        font-size: 17px;
+    }
+
+    p{
+        float: right;
+        margin-top: 10px;
+        font-size: 16px;
+        margin-right: 0%;
+        text-indent: 50px;
+        line-height: 1.8;
+    }
+
+    .info-mov{
+        margin-left: 25%;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .info-mov2{
+        margin-left: 30%;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .info-mov3{
+        margin-left: 50%;
+        margin-top: -22px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .epi{
+        font-size: 10px;
+        margin-left: 30%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .num-ep{
+        word-spacing: -10px;
+    }
+
+    .num-ep a{
+        padding: 8px 10px;
+        transform: .2s;
+        font-size: 15px;
+        margin-left: 33px;
+    }
+
+    .vid-back{
+        width: 100%;
+        height: 30vh;
+        margin-left: 0em;
+        margin-top: 20em;
+    }
+
+    iframe{
+        width: 85%;
+        height: 30vh;
+        margin-left: 4em;
+
+    }
+    
+    .bar-head{
+        margin-left: 95px;
+    }
+
+    .bar{
+        margin-top: 10px;
+        font-size: 14px;
+       margin-left: 10px;
+    }
+
+    .vid-back2{
+        width: 100%;
+        height: 30vh;
+        margin-left: 0em;
+        margin-top: 22em;
+    }
+}
 
 
