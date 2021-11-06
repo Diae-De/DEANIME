@@ -325,4 +325,52 @@ body{
     flex-wrap: wrap;
 }
 
+@media screen and (max-width:1500px) {
+    .logo {
+        position: absolute;
+        left: 40%;
+        width: calc(30% - 80px);
+        top: -130px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .logo {
+        position: absolute;
+        left: 40%;
+        width: calc(35% - 80px);
+        top: -100px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .logo {
+        position: absolute;
+        left: 45%;
+        width: calc(35% - 80px);
+        top: -50px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .logo {
+        position: absolute;
+        left: 37%;
+        width: calc(50% - 80px);
+        top: -100px;
+    }
+}
+
+
+@media screen and (max-width:414px) {
+    .logo {
+        position: absolute;
+        left: 37%;
+        width: calc(70% - 100px);
+        top: -50px;
+    }
+}
+
+
+
 
