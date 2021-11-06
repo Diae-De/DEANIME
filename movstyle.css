@@ -303,4 +303,56 @@ iframe{
     height: 50vh;
 }
 
+.epi{
+    color: white;
+    margin-left: 30%;
+    float: left;
+    margin-top: -20px;
+    background: #061e2e;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.epi li {
+    list-style: none;
+}
+
+.epi li a{
+    text-decoration: none;
+    color: rgba(231, 231, 231, 0.308);
+}
+
+.num-ep{
+    background: #061e2e;
+    float: left;
+    word-spacing: 3em;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.num-ep a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    background: #04121c;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transform: .2s;
+    text-align: center;
+}
+
+.num-ep a:hover{
+    background: #49a09d;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.num-ep a.active{
+    background: #49a09d;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
 

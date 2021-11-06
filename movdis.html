@@ -80,12 +80,66 @@
         </li>
     </ul>
 
-    <div class="vid-back">
-        <video width="600" controls>
-            <source src="https://s6.cloudcdn.live/to3qvwz5invsy46b3w4gx65zczxspyheuzv3hk64muf65ddlk7ombmqmdfaq/v.mp4">
-        </video>
+    <ul class="epi">
+        <li>
+            <span>Episodes:</span>
+        </li>
+    </ul>
+
+    <div class="num-ep">
+        <a href="#" id="btn1">1</a>
+        <a href="#" id="btn2">2</a>
+        <a href="#" id="btn3">3</a>
+        <a href="#" id="btn4">4</a>
+        <a href="#" id="btn5" class="active">5</a>
     </div>
 
+
+    <div class="vid-back">
+        <iframe id="myifram" src="https://s6.cloudcdn.live/to3qvwz5invsy46b3w4gx65zczxspyheuzv3hk64muf64inwq4xzeblqtwnq/v.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        numep = document.querySelector(".num-ep").querySelectorAll("a")
+
+        numep.forEach(element =>{
+            element.addEventListener('click', function(){
+                numep.forEach(nav=>nav.classList.remove("active"))
+
+                this.classList.add("active")
+            })
+        })
+    </script>
+
+
+    <script>
+        let btn1 = document.querySelector("#btn1");
+        let btn2 = document.querySelector("#btn2");
+        let btn3 = document.querySelector("#btn3");
+        let btn4 = document.querySelector("#btn4");
+        let vid = document.querySelector("#myifram");
+
+        btn1.addEventListener('click',()=>{
+            vid.src = "https://s3.cloudcdn.live/to3qvbtrinvsy46b3w2gxpnqcctf6oh6xslje527s3jxadhwcf7uw2mei7dq/v.mp4";
+        })
+
+        btn2.addEventListener('click',()=>{
+            vid.src = "https://s3.cloudcdn.live/to3qq5seinvsy46b3w2wxnf5k2bwll6lpwdwivhgpa5qelpw4zy6mkbbtiza/v.mp4";
+        })
+
+        btn3.addEventListener('click',()=>{
+            vid.src = "https://s3.cloudcdn.live/to3qvvcwinvsy46b3w3gxofgkb2pwihugp2g4c6y65akq76mkz6eqwzp7rua/v.mp4";
+        })
+
+        btn4.addEventListener('click',()=>{
+            vid.src = "https://s1.cloudcdn.live/to3qr7bkinvsy46b3w3wxkfcczupqkp2pjgq3ekjh2l7r67n6nrnosw7ucva/v.mp4";
+        })
+
+        btn5.addEventListener('click',()=>{
+            vid.src = "https://s6.cloudcdn.live/to3qvwz5invsy46b3w4gx65zczxspyheuzv3hk64muf64inwq4xzeblqtwnq/v.mp4";
+        })
+
+    </script>
 
     <script>
         let btn = document.querySelector("#btn")
