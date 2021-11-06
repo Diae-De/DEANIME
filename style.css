@@ -371,6 +371,15 @@ body{
     }
 }
 
+@media screen and (max-width:360px) {
+    .logo {
+        position: absolute;
+        left: 33%;
+        width: calc(90% - 100px);
+        top: -70px;
+    }
+}
+
 
 
 
